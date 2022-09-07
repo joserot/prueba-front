@@ -1,0 +1,80 @@
+@import "../utilities/variables";
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__login {
+	color: $text-color;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: 0.7rem;
+	padding-top: 1rem;
+	a {
+		color: $text-color;
+	}
+}
+
+.header__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	font-size: 0.7rem;
+	gap: 1rem;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.2rem;
+	img {
+		width: 1.5rem;
+		height: auto;
+		vertical-align: middle;
+	}
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.2rem;
+		.first {
+			color: $text-color;
+		}
+		.second {
+			color: $orange-color;
+		}
+	}
+}
+
+.phone {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	color: $text-color;
+	gap: 0.2rem;
+	.phone__number {
+		color: $orange-color;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.phone {
+		.phone__number {
+			font-size: 1.3rem;
+		}
+	}
+
+	.header__main {
+		font-size: 1rem;
+	}
+
+	.header__login {
+		font-size: 1rem;
+	}
+}

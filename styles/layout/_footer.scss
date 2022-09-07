@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+footer {
+	display: flex;
+	justify-content: center;
+	font-size: 0.8rem;
+	p {
+		width: 50%;
+		color: $text-color;
+		text-align: center;
+		a {
+			color: $text-color;
+		}
+	}
+}

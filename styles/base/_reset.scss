@@ -1,0 +1,48 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Raleway", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+	.container {
+		width: 700px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 1100px;
+	}
+}
+
+button {
+	cursor: pointer;
+	transition: transform 300ms ease;
+	&:hover {
+		transform: scale(1.1, 1.1);
+	}
+}

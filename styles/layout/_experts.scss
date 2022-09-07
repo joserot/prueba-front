@@ -1,0 +1,57 @@
+.experts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	h2 {
+		text-align: center;
+		color: $light-blue-color;
+	}
+}
+
+.experts__btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	flex-direction: column;
+	width: 100%;
+	button {
+		width: 90%;
+		padding: 0.5rem;
+		border-radius: 7px;
+		border: none;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.experts__btns {
+		button {
+			width: 70%;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.experts__btns {
+		flex-direction: row;
+		button {
+			width: 10%;
+			padding: 1rem;
+		}
+	}
+}
+
+.btn-love {
+	background-color: $red-color;
+}
+
+.btn-destiny {
+	background-color: $blue-color;
+}
+
+.btn-career {
+	background-color: $green-color;
+}
